@@ -1,0 +1,205 @@
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a colorful background theme */
+body {
+  background-color: var(--background-color);
+}
+
+/* Style the header */
+header {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 10px;
+  animation: slideDown 1s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  animation: fadeIn 1s ease-in-out;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* Style the main section */
+#main {
+  margin: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  color: var(--text-color);
+  animation: slideUp 1s ease-in-out;
+}
+
+p {
+  color: #777777;
+  animation: slideUp 1s ease-in-out;
+}
+
+button#cta-button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+button#cta-button:hover {
+  background-color: #005599;
+}
+
+/* Animation for fading in elements */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for sliding down the navigation menu */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for sliding up elements */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for the pulsating CTA button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Style the footer */
+footer {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Additional customizations for the landing page */
+
+/* Feature blocks */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.feature img {
+width: 80px;
+height: 80px;
+margin-bottom: 10px;
+animation: fadeIn 1s ease-in-out;
+}
+
+.feature h3 {
+color: #333333;
+margin-bottom: 5px;
+}
+
+.feature p {
+color: #777777;
+}
+
+.feature:hover {
+transform: translateY(-5px);
+}
+
+/* Custom colors /
+/ Primary color */
+:root {
+--primary-color: #007BFF;
+}
+
+/* Secondary color */
+:root {
+--secondary-color: #FF6C00;
+}
+
+/* Accent color */
+:root {
+--accent-color: #FFC107;
+}
+
+/* Text color */
+:root {
+--text-color: #333333;
+}
+
+/* Background color */
+:root {
+--background-color: #F5F5F5;
+}
